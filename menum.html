@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menú de Comida Mexicana</title>
+    <style>
+        /* Colores inspirados en la bandera de México */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* blanco */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #006341 33%, #ffffff 33%, #ffffff 66%, #CE1126 66%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2em;
+            text-shadow: 1px 1px 2px #00000055;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #006341; /* verde */
+            border-bottom: 3px solid #CE1126; /* rojo */
+            padding-bottom: 5px;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        .platillo {
+            background-color: #f7f7f7;
+            border-left: 8px solid #CE1126;
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 6px;
+            box-shadow: 1px 1px 5px #ddd;
+        }
+        .platillo h3 {
+            margin: 0 0 5px;
+            color: #006341;
+        }
+        .platillo p {
+            margin: 0 0 10px;
+            font-style: italic;
+            color: #555;
+        }
+        .precio {
+            font-weight: bold;
+            color: #CE1126;
+        }
+        footer {
+            background-color: #006341;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Menú Completo de Comida Mexicana
+</header>
+
+<main>
+    <section class="menu-section">
+        <h2>Entradas</h2>
+        <div class="platillo">
+            <h3>Guacamole Tradicional</h3>
+            <p>Puré de aguacate fresco con jitomate, cebolla, chile y limón.</p>
+            <span class="precio">$80 MXN</span>
+        </div>
+        <div class="platillo">
+            <h3>Quesadillas de Flor de Calabaza</h3>
+            <p>Deliciosas quesadillas rellenas de flor de calabaza y queso Oaxaca.</p>
+            <span class="precio">$90 MXN</span>
+        </div>
+        <div class="platillo">
+            <h3>Nachos con Salsa de Chile</h3>
+            <p>Tortilla chips crujientes con queso fundido, frijoles y salsa picante.</p>
+            <span class="precio">$85 MXN</span>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Platos Fuertes</h2>
+        <div class="platillo">
+            <h3>Tacos al Pastor</h3>
+            <p>Tacos de cerdo marinados con achiote y piña, acompañados de cebolla y cilantro.</p>
+            <span class="precio">$120 MXN (3 piezas)</span>
+        </div>
+        <div class="platillo">
+            <h3>Enchiladas Verdes</h3>
+            <p>Tortillas rellenas de pollo bañadas en salsa de tomatillo y crema fresca.</p>
+            <span class="precio">$110 MXN</span>
+        </div>
+        <div class="platillo">
+            <h3>Chiles en Nogada</h3>
+            <p>Chile poblano relleno de picadillo, cubierto con salsa de nuez y granada.</p>
+            <span class="precio">$150 MXN</span>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Postres</h2>
+        <div class="platillo">
+            <h3>Arroz con Leche</h3>
+            <p>Tradicional arroz con leche con canela y pasas.</p>
+            <span class="precio">$60 MXN</span>
+        </div>
+        <div class="platillo">
+            <h3>Flan Napolitano</h3>
+            <p>Suave flan de vainilla con caramelo.</p>
+            <span class="precio">$70 MXN</span>
+        </div>
+        <div class="platillo">
+            <h3>Churros con Chocolate</h3>
+            <p>Churros crujientes acompañados de salsa de chocolate caliente.</p>
+            <span class="precio">$75 MXN</span>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Bebidas</h2>
+        <div class="platillo">
+            <h3>Aguas Frescas</h3>
+            <p>Horchata, Jamaica o Tamarindo (vaso grande).</p>
+            <span class="precio">$40 MXN</span>
+        </div>
+        <div class="platillo">
+            <h3>Margarita Clásica</h3>
+            <p>Tequila, triple sec y jugo de limón, servida con sal en el borde.</p>
+            <span class="precio">$90 MXN</span>
+        </div>
+        <div class="platillo">
+            <h3>Cerveza Mexicana</h3>
+            <p>Corona, Modelo o Pacífico (botella 355ml).</p>
+            <span class="precio">$50 MXN</span>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2025 Restaurante Mexicano | Todos los derechos reservados
+</footer>
+
+</body>
+</html>

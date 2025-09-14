@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menú de Comida Francesa</title>
+    <style>
+        /* Colores inspirados en la bandera de Francia */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* blanco */
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #0055A4 33%, #ffffff 33%, #EF4135 66%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px #00000055;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #0055A4; /* azul */
+            border-bottom: 3px solid #EF4135; /* rojo */
+            padding-bottom: 5px;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        .platillo {
+            background-color: #f7f7f7;
+            border-left: 8px solid #EF4135;
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 6px;
+            box-shadow: 1px 1px 5px #ddd;
+        }
+        .platillo h3 {
+            margin: 0 0 5px;
+            color: #0055A4;
+        }
+        .platillo p {
+            margin: 0 0 10px;
+            font-style: italic;
+            color: #555;
+        }
+        .precio {
+            font-weight: bold;
+            color: #EF4135;
+        }
+        footer {
+            background-color: #0055A4;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Menú Completo de Comida Francesa
+</header>
+
+<main>
+    <section class="menu-section">
+        <h2>Entrées (Entradas)</h2>
+        <div class="platillo">
+            <h3>Soupe à l'oignon (Sopa de cebolla)</h3>
+            <p>Deliciosa sopa de cebolla gratinada con queso derretido.</p>
+            <span class="precio">€8</span>
+        </div>
+        <div class="platillo">
+            <h3>Escargots de Bourgogne (Caracoles a la borgoña)</h3>
+            <p>Caracoles cocidos con mantequilla, ajo y hierbas frescas.</p>
+            <span class="precio">€12</span>
+        </div>
+        <div class="platillo">
+            <h3>Foie Gras</h3>
+            <p>Delicioso foie gras acompañado de pan brioche y mermelada de higos.</p>
+            <span class="precio">€20</span>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Plats Principaux (Platos principales)</h2>
+        <div class="platillo">
+            <h3>Coq au Vin (Pollo al vino)</h3>
+            <p>Pollo estofado en vino tinto con cebollas, champiñones y zanahorias.</p>
+            <span class="precio">€18</span>
+        </div>
+        <div class="platillo">
+            <h3>Bouillabaisse (Sopa de pescado)</h3>
+            <p>Sopa provenzal hecha con mariscos frescos y hierbas aromáticas.</p>
+            <span class="precio">€22</span>
+        </div>
+        <div class="platillo">
+            <h3>Ratatouille</h3>
+            <p>Guiso de verduras frescas, como berenjena, calabacín, pimientos y tomate.</p>
+            <span class="precio">€15</span>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Fromages (Quesos)</h2>
+        <div class="platillo">
+            <h3>Camembert</h3>
+            <p>Queso cremoso originario de Normandía, ideal para acompañar con pan y vino.</p>
+            <span class="precio">€10</span>
+        </div>
+        <div class="platillo">
+            <h3>Roquefort</h3>
+            <p>Queso azul de oveja con un sabor fuerte y característico.</p>
+            <span class="precio">€12</span>
+        </div>
+        <div class="platillo">
+            <h3>Brie</h3>
+            <p>Queso suave de leche de vaca, típico de la región de Île-de-France.</p>
+            <span class="precio">€11</span>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Desserts (Postres)</h2>
+        <div class="platillo">
+            <h3>Crème Brûlée</h3>
+            <p>Postre cremoso con una capa caramelizada de azúcar.</p>
+            <span class="precio">€7</span>
+        </div>
+        <div class="platillo">
+            <h3>Tarte Tatin</h3>
+            <p>Deliciosa tarta de manzana caramelizada al revés.</p>
+            <span class="precio">€8</span>
+        </div>
+        <div class="platillo">
+            <h3>Madeleines</h3>
+            <p>Pequeños bizcochos esponjosos con un toque de limón.</p>
+            <span class="precio">€6</span>
+        </div>
+    </section>
+
+    <section class="menu-section">
+        <h2>Boissons (Bebidas)</h2>
+        <div class="platillo">
+            <h3>Vino de Bordeaux</h3>
+            <p>Vino tinto de la región de Burdeos, perfecto para acompañar carnes y quesos.</p>
+            <span class="precio">€25</span>
+        </div>
+        <div class="platillo">
+            <h3>Café au Lait</h3>
+            <p>Café fuerte con leche espumosa, tradicional de los cafés franceses.</p>
+            <span class="precio">€3</span>
+        </div>
+        <div class="platillo">
+            <h3>Champagne</h3>
+            <p>Exquisito champagne francés, ideal para celebraciones.</p>
+            <span class="precio">€50</span>
+        </div>
+    </section>
+</main>
+
+<footer>
+    © 2025 Restaurante Francés | Todos los derechos reservados
+</footer>
+
+</body>
+</html>
