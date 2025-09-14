@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Restaurante Menú Semanal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EAF2F8;
+            color: #34495E;
+        }
+        header {
+            background-color: #2980B9;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #1C5980;
+        }
+        nav {
+            background-color: #3498DB;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        nav .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2980B9;
+            min-width: 180px;
+            z-index: 1;
+        }
+        nav .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        nav .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        main {
+            padding: 30px;
+            margin-bottom: 100px; /* para que no tape footer fijo */
+        }
+        .menu-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .menu-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .menu-gallery div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-gallery div:hover {
+            transform: scale(1.05);
+        }
+        .menu-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .menu-gallery div:hover img {
+            transform: scale(1.1);
+        }
+        .menu-gallery p {
+            position: absolute;
+            bottom: 10px;
+            left: 15px;
+            color: white;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .week-menu {
+            background-color: #D5E8F5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .week-menu h3 {
+            color: #2980B9;
+        }
+        .week-menu img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .btn-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .link-btn {
+            display: inline-block;
+            background-color: #2980B9;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 15px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+        .link-btn.blue-btn {
+            background-color: blue;
+            font-size: 22px;         /* Más grande */
+            padding: 18px 36px;      /* Más padding */
+            font-weight: 900;        /* Más grueso */
+            box-shadow: 0 4px 10px rgba(0,0,139,0.7); /* sombra azul oscura */
+            border: 2px solid white; /* borde blanco para mejor contraste */
+            border-radius: 8px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* sombra texto */
+        }
+        .link-btn.blue-btn:hover {
+            background-color: #00008B;
+        }
+        .link-btn:hover {
+            background-color: #1C5980;
+        }
+        footer {
+            background-color: #3498DB;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Restaurante Menú Semanal</h1>
+        <p>¡Cada semana, una nueva experiencia culinaria!</p>
+    </header>
+
+    <nav>
+        <a href="#about">Sobre Nosotros</a>
+        <a href="#menu">Menú</a>
+        <a href="#sorpresas">Sorpresas</a>
+        
+        <div class="dropdown">
+            <a href="#">Estilos de Comida ▼</a>
+            <div class="dropdown-content">
+                <a href="menum.html">Comida Mexicana</a>
+                <a href="menuf.html">Comida Francesa</a>
+                <a href="menuj.html">Comida Japonesa</a>
+                <a href="menuMed.html">Comida Mediterránea</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="menu-info">
+                <h2>¿Qué hacemos?</h2>
+                <p>En nuestro restaurante, cada semana cambiamos completamente el estilo de nuestra cocina. Desde la comida italiana hasta la japonesa, queremos que cada visita sea una experiencia nueva para tu paladar. ¡Te esperamos!</p>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="menu-gallery">
+                <div>
+                    <img src="restaurante.jpg" alt="Interior acogedor del restaurante" />
+                    <p>Interior del Restaurante</p>
+                </div>
+                <div>
+                    <img src="restMex.jpg" alt="Decoración moderna del restaurante" />
+                    <p>Decoración Moderna</p>
+                </div>
+                <div>
+                    <img src="pasta.jpg" alt="Platillo italiano con pasta" />
+                    <p>Delicioso Platillo Italiano</p>
+                </div>
+            </div>
+
+            <div class="week-menu">
+                <h2>Menú de esta semana:</h2>
+                <h3>Semana 1 - ¡Comida Italiana!</h3>
+                <img src="imagenes/comida-italiana.jpg" alt="Variedad de comida italiana" />
+                <p>Esta semana, disfruta de una variedad de platos italianos: pasta fresca, pizzas al horno, lasaña y mucho más.</p>
+            </div>
+
+            <div class="week-menu">
+                <h2>Próximas semanas:</h2>
+                <ul>
+                    <li>Semana 2: Comida Mexicana <img src="imagenes/comida-mexicana.jpg" alt="Plato de comida mexicana" style="width: 100px; margin-left: 10px;" /></li>
+                    <li>Semana 3: Comida Francesa <img src="imagenes/comida-francesa.jpg" alt="Plato gourmet francés" style="width: 100px; margin-left: 10px;" /></li>
+                    <li>Semana 4: Comida Japonesa <img src="imagenes/comida-japonesa.jpg" alt="Sushi y platos japoneses" style="width: 100px; margin-left: 10px;" /></li>
+                    <li>Semana 5: Comida Mediterránea <img src="imagenes/comida-mediterranea.jpg" alt="Comida mediterránea saludable" style="width: 100px; margin-left: 10px;" /></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sorpresas">
+            <div class="menu-info">
+                <h2>🎁 Sorpresas del Chef</h2>
+                <p>¿Te gusta lo inesperado? ¡Cada mes nuestro chef prepara algo fuera del menú para sorprender a nuestros comensales más curiosos! Podría ser un postre secreto, una bebida especial o una fusión de sabores únicos.</p>
+                <p>Déjanos tus datos y te avisaremos cuando haya nuevas sorpresas en el restaurante.</p>
+
+                <form action="#" method="post">
+                    <label for="name">Nombre:</label><br />
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" /><br /><br />
+
+                    <label for="email">Correo Electrónico:</label><br />
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" /><br /><br />
+
+                    <label for="message">Mensaje o comentario:</label><br />
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="¿Qué tipo de sorpresa te gustaría recibir?"></textarea><br /><br />
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="btn-container">
+        <a href="inicio.html" class="link-btn" target="_blank">Ir a Inicio</a>
+        <a href="https://yareyep.github.io/botones/" class="link-btn blue-btn" target="_blank">Deberías abrir esto</a>
+    </div>
+
+    <footer>
+        <p>© 2025 Restaurante Menú Semanal | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
